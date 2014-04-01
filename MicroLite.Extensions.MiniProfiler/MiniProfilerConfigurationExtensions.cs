@@ -14,6 +14,7 @@ namespace MicroLite.Configuration
 {
     using System;
     using MicroLite.Extensions.MiniProfiler;
+    using StackExchange.Profiling;
 
     /// <summary>
     /// Extensions for the MicroLite configuration.
@@ -25,7 +26,7 @@ namespace MicroLite.Configuration
         /// </summary>
         /// <param name="configureExtensions">The interface to configure extensions.</param>
         /// <returns>The configure extensions.</returns>
-        public static IConfigureExtensions WithLog4Net(this IConfigureExtensions configureExtensions)
+        public static IConfigureExtensions WithMiniProfiler(this IConfigureExtensions configureExtensions)
         {
             if (configureExtensions == null)
             {
@@ -40,6 +41,10 @@ namespace MicroLite.Configuration
 
                 sessionFactory.DbDriver.DbProviderFactory = new ProfilingDbProviderFactory(dbProviderFactory);
             };
+
+            MiniProfiler.Settings.ExcludeAssembly("MicroLite");
+            MiniProfiler.Settings.ExcludeAssembly("MicroLite.Logging.Log4Net");
+            MiniProfiler.Settings.ExcludeAssembly("MicroLite.Logging.NLog");
 
             System.Diagnostics.Trace.TraceInformation("MicroLite: MiniProfiler extension loaded.");
 
