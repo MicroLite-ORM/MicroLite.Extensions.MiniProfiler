@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("MicroLite.Extensions.MiniProfiler")]
-[assembly: AssemblyDescription("MicroLite ORM Framework extension to use MiniProfiler")]
+[assembly: AssemblyDescription("MicroLite.Extensions.MiniProfiler is an extension to the MicroLite ORM Framework which allows MiniProfiler to profile MicroLite database queries.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("MicroLite")]
 [assembly: AssemblyProduct("MicroLite.Extensions.MiniProfiler")]
