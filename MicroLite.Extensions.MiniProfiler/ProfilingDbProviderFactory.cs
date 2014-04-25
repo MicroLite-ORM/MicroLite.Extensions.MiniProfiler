@@ -23,13 +23,16 @@
 
         public override DbCommand CreateCommand()
         {
-            var profiler = MiniProfiler.Current;
-
             var command = this.inner.CreateCommand();
 
-            return profiler != null
-                ? new ProfiledDbCommand(command, null, MiniProfiler.Current)
-                : command;
+            var profiler = MiniProfiler.Current;
+
+            if (profiler == null)
+            {
+                return command;
+            }
+
+            return new ProfiledDbCommand(command, null, profiler);
         }
 
         public override DbCommandBuilder CreateCommandBuilder()
@@ -39,13 +42,16 @@
 
         public override DbConnection CreateConnection()
         {
-            var profiler = MiniProfiler.Current;
-
             var connection = this.inner.CreateConnection();
 
-            return profiler != null
-                ? new ProfiledDbConnection(connection, MiniProfiler.Current)
-                : connection;
+            var profiler = MiniProfiler.Current;
+
+            if (profiler == null)
+            {
+                return connection;
+            }
+
+            return new ProfiledDbConnection(connection, profiler);
         }
 
         public override DbConnectionStringBuilder CreateConnectionStringBuilder()
