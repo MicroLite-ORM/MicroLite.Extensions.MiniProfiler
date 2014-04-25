@@ -6,7 +6,6 @@
     <authors>Trevor Pilley and MicroLite Project Contributors</authors>
     <owners>Trevor Pilley</owners>
     <description>An extension for the MicroLite ORM Framework to use MiniProfiler.</description>
-    <releaseNotes>See https://github.com/TrevorPilley/MicroLite.Extensions.MiniProfiler/wiki/Release-Notes/ for a summary of changes made in this release of the package.</releaseNotes>
     <language>en-GB</language>
     <projectUrl>http://microliteorm.wordpress.com/</projectUrl>
     <licenseUrl>http://microliteorm.wordpress.com/license/</licenseUrl>
