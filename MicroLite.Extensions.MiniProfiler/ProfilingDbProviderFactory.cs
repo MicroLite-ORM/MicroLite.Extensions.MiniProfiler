@@ -4,7 +4,7 @@
     using StackExchange.Profiling;
     using StackExchange.Profiling.Data;
 
-    public sealed class ProfilingDbProviderFactory : DbProviderFactory
+    internal sealed class ProfilingDbProviderFactory : DbProviderFactory
     {
         private readonly DbProviderFactory dbProviderFactory;
 
