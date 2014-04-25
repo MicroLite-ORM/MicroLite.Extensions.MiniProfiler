@@ -14,7 +14,7 @@
     <tags>Micro ORM Framework POCO Database MiniProfiler</tags>
     <dependencies>
       <dependency id="MiniProfiler" version="[2.1.0,3)" />
-      <dependency id="MicroLite" version="5.0.0-rc" />
+      <dependency id="MicroLite" version="5.0.0-rc2" />
     </dependencies>
   </metadata>
   <files>

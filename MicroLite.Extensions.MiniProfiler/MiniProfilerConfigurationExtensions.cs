@@ -40,6 +40,8 @@ namespace MicroLite.Configuration
                 var dbProviderFactory = sessionFactory.DbDriver.DbProviderFactory;
 
                 sessionFactory.DbDriver.DbProviderFactory = new ProfilingDbProviderFactory(dbProviderFactory);
+
+                return sessionFactory;
             };
 
             MiniProfiler.Settings.ExcludeAssembly("MicroLite");
