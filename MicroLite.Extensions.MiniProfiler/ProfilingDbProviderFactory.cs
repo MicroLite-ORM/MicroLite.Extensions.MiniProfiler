@@ -6,18 +6,18 @@
 
     internal sealed class ProfilingDbProviderFactory : DbProviderFactory
     {
-        private readonly DbProviderFactory dbProviderFactory;
+        private readonly DbProviderFactory inner;
 
-        public ProfilingDbProviderFactory(DbProviderFactory dbProviderFactory)
+        internal ProfilingDbProviderFactory(DbProviderFactory inner)
         {
-            this.dbProviderFactory = dbProviderFactory;
+            this.inner = inner;
         }
 
         public override bool CanCreateDataSourceEnumerator
         {
             get
             {
-                return this.dbProviderFactory.CanCreateDataSourceEnumerator;
+                return this.inner.CanCreateDataSourceEnumerator;
             }
         }
 
@@ -25,7 +25,7 @@
         {
             var profiler = MiniProfiler.Current;
 
-            var command = this.dbProviderFactory.CreateCommand();
+            var command = this.inner.CreateCommand();
 
             return profiler != null
                 ? new ProfiledDbCommand(command, null, MiniProfiler.Current)
@@ -34,14 +34,14 @@
 
         public override DbCommandBuilder CreateCommandBuilder()
         {
-            return this.dbProviderFactory.CreateCommandBuilder();
+            return this.inner.CreateCommandBuilder();
         }
 
         public override DbConnection CreateConnection()
         {
             var profiler = MiniProfiler.Current;
 
-            var connection = this.dbProviderFactory.CreateConnection();
+            var connection = this.inner.CreateConnection();
 
             return profiler != null
                 ? new ProfiledDbConnection(connection, MiniProfiler.Current)
@@ -50,27 +50,27 @@
 
         public override DbConnectionStringBuilder CreateConnectionStringBuilder()
         {
-            return this.dbProviderFactory.CreateConnectionStringBuilder();
+            return this.inner.CreateConnectionStringBuilder();
         }
 
         public override DbDataAdapter CreateDataAdapter()
         {
-            return this.dbProviderFactory.CreateDataAdapter();
+            return this.inner.CreateDataAdapter();
         }
 
         public override DbDataSourceEnumerator CreateDataSourceEnumerator()
         {
-            return this.dbProviderFactory.CreateDataSourceEnumerator();
+            return this.inner.CreateDataSourceEnumerator();
         }
 
         public override DbParameter CreateParameter()
         {
-            return this.dbProviderFactory.CreateParameter();
+            return this.inner.CreateParameter();
         }
 
         public override System.Security.CodeAccessPermission CreatePermission(System.Security.Permissions.PermissionState state)
         {
-            return this.dbProviderFactory.CreatePermission(state);
+            return this.inner.CreatePermission(state);
         }
     }
 }
