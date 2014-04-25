@@ -19,4 +19,8 @@ You can then load the extension in your application start-up:
        .Fluently()
        ...
 
-For further information on configuring MiniProfiler, see [http://miniprofiler.com/](http://miniprofiler.com/)
+For further information on configuring MiniProfiler, see [http://miniprofiler.com/](http://miniprofiler.com/).
+
+_Supported .NET Framework Versions_
+
+The NuGet Package contains binaries compiled against 4.0 and 4.5.
