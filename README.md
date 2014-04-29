@@ -23,4 +23,7 @@ For further information on configuring MiniProfiler, see [http://miniprofiler.co
 
 _Supported .NET Framework Versions_
 
-The NuGet Package contains binaries compiled against 4.0 and 4.5.
+The NuGet Package contains binaries compiled against:
+
+* .NET 4.0 (Full)
+* .NET 4.5
