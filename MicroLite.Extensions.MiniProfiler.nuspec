@@ -13,8 +13,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>Micro ORM Framework POCO Database MiniProfiler</tags>
     <dependencies>
-      <dependency id="MiniProfiler" version="[2.1.0,3)" />
-      <dependency id="MicroLite" version="5.0.0-rc2" />
+      <dependency id="MiniProfiler" version="3.0.10" />
+      <dependency id="MicroLite" version="5.0.0" />
     </dependencies>
   </metadata>
   <files>
