@@ -11,9 +11,9 @@
     <licenseUrl>http://microliteorm.wordpress.com/license/</licenseUrl>
     <copyright>Copyright 2012 - 2014 Project Contributors</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <tags>Micro ORM Framework POCO Database MiniProfiler</tags>
+    <tags>MiniProfiler SQL Profiling</tags>
     <dependencies>
-      <dependency id="MiniProfiler" version="3.0.10" />
+      <dependency id="MiniProfiler" version="3.0.11" />
       <dependency id="MicroLite" version="5.0.0" />
     </dependencies>
   </metadata>

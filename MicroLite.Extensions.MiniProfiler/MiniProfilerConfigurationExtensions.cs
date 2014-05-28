@@ -13,8 +13,8 @@
 namespace MicroLite.Configuration
 {
     using System;
-    using MicroLite.Extensions.MiniProfiler;
     using StackExchange.Profiling;
+    using StackExchange.Profiling.Data;
 
     /// <summary>
     /// Extensions for the MicroLite configuration.
@@ -39,7 +39,7 @@ namespace MicroLite.Configuration
             {
                 var dbProviderFactory = sessionFactory.DbDriver.DbProviderFactory;
 
-                sessionFactory.DbDriver.DbProviderFactory = new ProfilingDbProviderFactory(dbProviderFactory);
+                sessionFactory.DbDriver.DbProviderFactory = new ProfiledDbProviderFactory(dbProviderFactory);
 
                 return sessionFactory;
             };
