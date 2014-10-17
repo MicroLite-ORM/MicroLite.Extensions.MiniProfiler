@@ -13,7 +13,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>MiniProfiler SQL Profiling</tags>
     <dependencies>
-      <dependency id="MiniProfiler" version="3.0.11" />
+      <dependency id="MiniProfiler" version="3.1" />
       <dependency id="MicroLite" version="5.0.0" />
     </dependencies>
   </metadata>
