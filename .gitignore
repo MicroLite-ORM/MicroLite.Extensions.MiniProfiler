@@ -3,6 +3,7 @@ bin
 obj
 build
 packages
+NDependOut
 
 # mstest test results
 TestResults
@@ -11,3 +12,4 @@ TestResults
 *.suo
 *.user
 *.sln.docstates
+*.shfbproj_*
