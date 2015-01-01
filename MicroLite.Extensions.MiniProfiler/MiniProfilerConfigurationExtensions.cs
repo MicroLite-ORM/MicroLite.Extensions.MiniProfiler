@@ -47,6 +47,7 @@ namespace MicroLite.Configuration
             MiniProfiler.Settings.ExcludeAssembly("MicroLite");
             MiniProfiler.Settings.ExcludeAssembly("MicroLite.Logging.Log4Net");
             MiniProfiler.Settings.ExcludeAssembly("MicroLite.Logging.NLog");
+            MiniProfiler.Settings.ExcludeAssembly("MicroLite.Logging.Serilog");
 
             System.Diagnostics.Trace.TraceInformation("MicroLite: MiniProfiler extension loaded.");
 
