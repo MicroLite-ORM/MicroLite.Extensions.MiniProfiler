@@ -14,7 +14,7 @@
     <tags>MiniProfiler SQL Profiling</tags>
     <dependencies>
       <dependency id="MiniProfiler" version="3.1" />
-      <dependency id="MicroLite" version="6.0.0" />
+      <dependency id="MicroLite" version="6.1.0" />
     </dependencies>
   </metadata>
   <files>
