@@ -1,6 +1,8 @@
 MicroLite.Extensions.MiniProfiler
 =================================
 
+[![NuGet version](https://badge.fury.io/nu/MicroLite.Extensions.MiniProfiler.svg)](http://badge.fury.io/nu/MicroLite.Extensions.MiniProfiler)
+
 _MicroLite.Extensions.MiniProfiler_ is an extension to the MicroLite ORM Framework which allows [MiniProfiler](http://miniprofiler.com/) to profile MicroLite database queries.
 
 In order to use the extension, you first need to install it via NuGet:
