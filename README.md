@@ -29,3 +29,4 @@ The NuGet Package contains binaries compiled against:
 
 * .NET 4.0 (Full)
 * .NET 4.5
+* .NET 4.6
