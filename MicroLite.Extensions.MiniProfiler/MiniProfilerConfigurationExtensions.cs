@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
 // <copyright file="MiniProfilerConfigurationExtensions.cs" company="MicroLite">
-// Copyright 2012 - 2015 Project Contributors
+// Copyright 2012 - 2017 Project Contributors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ namespace MicroLite.Configuration
         {
             if (configureExtensions == null)
             {
-                throw new ArgumentNullException("configureExtensions");
+                throw new ArgumentNullException(nameof(configureExtensions));
             }
 
             System.Diagnostics.Trace.TraceInformation("MicroLite: loading MiniProfiler extension.");
