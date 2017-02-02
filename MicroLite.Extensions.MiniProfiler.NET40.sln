@@ -1,12 +1,8 @@
-﻿Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{178BDD22-6397-40BA-B670-C2F61FA1DB01}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroLite.Extensions.MiniProfiler.NET40", "MicroLite.Extensions.MiniProfiler\MicroLite.Extensions.MiniProfiler.NET40.csproj", "{1470F3C2-78BD-478B-9567-C357C01A5881}"
 EndProject
 Global
