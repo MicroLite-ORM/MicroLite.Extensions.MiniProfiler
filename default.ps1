@@ -1,4 +1,5 @@
 properties {
+  $buildVersion
   $projectName = "MicroLite.Extensions.MiniProfiler"
   $baseDir = Resolve-Path .
   $buildDir = "$baseDir\build"
@@ -6,9 +7,9 @@ properties {
   $msbuild = "C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe"
 
   $builds = @(
-    @{Name = "NET40"; Constants="NET_4_0"; BuildDir="$buildDir\4.0\"; Framework="v4.0"},
-    @{Name = "NET45"; Constants="NET_4_5"; BuildDir="$buildDir\4.5\"; Framework="v4.5"},
-    @{Name = "NET46"; Constants="NET_4_6"; BuildDir="$buildDir\4.6\"; Framework="v4.6"}
+    @{ Name = "NET40"; Constants="NET40"; BuildDir="$buildDir\4.0\"; Framework="v4.0" },
+    @{ Name = "NET45"; Constants="NET45"; BuildDir="$buildDir\4.5\"; Framework="v4.5" },
+    @{ Name = "NET46"; Constants="NET46"; BuildDir="$buildDir\4.6\"; Framework="v4.6" }
   )
 }
 
