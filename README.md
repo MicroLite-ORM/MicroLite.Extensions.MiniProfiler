@@ -23,10 +23,14 @@ You can then load the extension in your application start-up:
 
 For further information on configuring MiniProfiler, see [http://miniprofiler.com/](http://miniprofiler.com/).
 
-_Supported .NET Framework Versions_
+## Supported .NET Framework Versions
 
 The NuGet Package contains binaries compiled against:
 
 * .NET 4.0 (Full)
 * .NET 4.5
 * .NET 4.6
+
+## Supported miniprofiler Versions
+
+* miniprofiler 3.2.0 onwards
