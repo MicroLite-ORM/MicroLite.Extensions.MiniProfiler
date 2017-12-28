@@ -1,7 +1,7 @@
 MicroLite.Extensions.MiniProfiler
 =================================
 
-[![NuGet version](https://badge.fury.io/nu/MicroLite.Extensions.MiniProfiler.svg)](http://badge.fury.io/nu/MicroLite.Extensions.MiniProfiler)
+[![NuGet version](https://badge.fury.io/nu/MicroLite.Extensions.MiniProfiler.svg)](http://badge.fury.io/nu/MicroLite.Extensions.MiniProfiler) [![Build Status](https://trevorpilley.visualstudio.com/_apis/public/build/definitions/4cf9ae80-460f-4dc8-a6fd-815e9e58ad35/8/badge)](https://trevorpilley.visualstudio.com/MicroLite.Extensions.WebApi)
 
 _MicroLite.Extensions.MiniProfiler_ is an extension to the MicroLite ORM Framework which allows [MiniProfiler](http://miniprofiler.com/) to profile MicroLite database queries.
 
@@ -27,9 +27,7 @@ For further information on configuring MiniProfiler, see [http://miniprofiler.co
 
 The NuGet Package contains binaries compiled against:
 
-* .NET 4.0 (Full)
 * .NET 4.5
-* .NET 4.6
 
 ## Supported miniprofiler Versions
 

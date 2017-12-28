@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroLite.Extensions.MiniProfiler.NET45", "MicroLite.Extensions.MiniProfiler\MicroLite.Extensions.MiniProfiler.NET45.csproj", "{1470F3C2-78BD-478B-9567-C357C01A5881}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroLite.Extensions.MiniProfiler", "MicroLite.Extensions.MiniProfiler\MicroLite.Extensions.MiniProfiler.csproj", "{1470F3C2-78BD-478B-9567-C357C01A5881}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

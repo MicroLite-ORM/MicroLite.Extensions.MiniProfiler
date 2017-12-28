@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="AssemblyInfo.cs" company="MicroLite">
+// <copyright file="AssemblyInfo.cs" company="Project Contributors">
 // Copyright 2012 - 2017 Project Contributors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -44,9 +44,8 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
-// [assembly: AssemblyVersion("6.3.0.0")]
-[assembly: AssemblyVersion("6.3.0.0")]
-[assembly: AssemblyFileVersion("6.3.0.0")]
-[assembly: AssemblyInformationalVersion("6.3.0.44")]
+[assembly: AssemblyVersion("6.4.0.0")]
+[assembly: AssemblyFileVersion("6.4.0.0")]
+[assembly: AssemblyInformationalVersion("6.4.0.0")]
 [assembly: CLSCompliant(true)]
-[assembly: NeutralResourcesLanguageAttribute("en-GB")]
+[assembly: NeutralResourcesLanguage("en-GB")]
