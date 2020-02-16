@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroLite.Extensions.MiniProfiler", "MicroLite.Extensions.MiniProfiler\MicroLite.Extensions.MiniProfiler.csproj", "{1470F3C2-78BD-478B-9567-C357C01A5881}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroLite.Extensions.MiniProfiler", "MicroLite.Extensions.MiniProfiler\MicroLite.Extensions.MiniProfiler.csproj", "{1470F3C2-78BD-478B-9567-C357C01A5881}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C7DC9506-EC84-4CB1-A7CB-AD4A114FF17D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +23,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1A86FAC-4284-4E02-9722-8D05DA4A9280}
 	EndGlobalSection
 EndGlobal
