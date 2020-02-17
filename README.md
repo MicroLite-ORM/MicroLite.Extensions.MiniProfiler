@@ -1,9 +1,13 @@
 MicroLite.Extensions.MiniProfiler
 =================================
 
-[![NuGet version](https://badge.fury.io/nu/MicroLite.Extensions.MiniProfiler.svg)](http://badge.fury.io/nu/MicroLite.Extensions.MiniProfiler) [![Build Status](https://trevorpilley.visualstudio.com/_apis/public/build/definitions/4cf9ae80-460f-4dc8-a6fd-815e9e58ad35/8/badge)](https://trevorpilley.visualstudio.com/MicroLite.Extensions.WebApi)
+|Service|Status|
+|-------|------|
+||[![NuGet version](https://badge.fury.io/nu/MicroLite.Extensions.MiniProfiler.svg)](http://badge.fury.io/nu/MicroLite.Extensions.MiniProfiler)|
+|/develop|[![Build Status](https://dev.azure.com/trevorpilley/MicroLite-ORM/_apis/build/status/MicroLite-ORM.MicroLite.Extensions.MiniProfiler?branchName=develop)](https://dev.azure.com/trevorpilley/MicroLite-ORM/_build/latest?definitionId=31&branchName=develop)|
+|/master|[![Build Status](https://dev.azure.com/trevorpilley/MicroLite-ORM/_apis/build/status/MicroLite-ORM.MicroLite.Extensions.MiniProfiler?branchName=master)](https://dev.azure.com/trevorpilley/MicroLite-ORM/_build/latest?definitionId=31&branchName=master)|
 
-_MicroLite.Extensions.MiniProfiler_ is an extension to the MicroLite ORM Framework which allows [MiniProfiler](http://miniprofiler.com/) to profile MicroLite database queries.
+MicroLite.Extensions.MiniProfiler is a .NET 4.5 library which adds an extension for the MicroLite ORM Framework to integrate with [MiniProfiler](http://miniprofiler.com/).
 
 In order to use the extension, you first need to install it via NuGet:
 
@@ -23,12 +27,10 @@ You can then load the extension in your application start-up:
 
 For further information on configuring MiniProfiler, see [http://miniprofiler.com/](http://miniprofiler.com/).
 
-## Supported .NET Framework Versions
+### Supported .NET Versions
 
 The NuGet Package contains binaries compiled against:
 
-* .NET 4.5
-
-## Supported miniprofiler Versions
-
-* miniprofiler 3.2.0 onwards
+* .NET Framework 4.5
+* - MicroLite 6.3.1
+* - MiniProfiler 3.2.0.157
