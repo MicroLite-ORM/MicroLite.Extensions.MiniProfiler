@@ -7,13 +7,13 @@
     <AssemblyOriginatorKeyFile>..\MicroLite.snk</AssemblyOriginatorKeyFile>
     <Version>6.5.0</Version>
     <Authors>Trevor Pilley and Project Contributors</Authors>
-    <Description>A .NET 4.5 library which adds an extension for the MicroLite ORM Framework to integrate with ASP.NET MVC.</Description>
+    <Description>A .NET 4.5 library which adds an extension for the MicroLite ORM Framework to integrate with MiniProfiler.</Description>
     <Copyright>Copyright 2012 - 2020 Project Contributors</Copyright>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <PackageTags>ASP.NET MVC MicroORM ORM POCO Database</PackageTags>
-    <PackageReleaseNotes>See https://github.com/MicroLite-ORM/MicroLite.Extensions.Mvc/releases for a summary of changes made in this release of the package.</PackageReleaseNotes>
+    <PackageTags>MiniProfiler SQL Profiling MicroORM ORM POCO Database</PackageTags>
+    <PackageReleaseNotes>See https://github.com/MicroLite-ORM/MicroLite.Extensions.MiniProfiler/releases for a summary of changes made in this release of the package.</PackageReleaseNotes>
     <NeutralLanguage>en-GB</NeutralLanguage>
-    <RepositoryUrl>https://github.com/MicroLite-ORM/MicroLite.Extensions.Mvc</RepositoryUrl>
+    <RepositoryUrl>https://github.com/MicroLite-ORM/MicroLite.Extensions.MiniProfiler</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
