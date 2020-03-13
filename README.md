@@ -1,6 +1,5 @@
-# MicroLite.Extensions.MiniProfiler
-
-## Status
+MicroLite.Extensions.MiniProfiler
+=================================
 
 |Service|Status|
 |-------|------|
@@ -8,13 +7,13 @@
 |/develop|[![Build Status](https://dev.azure.com/trevorpilley/MicroLite-ORM/_apis/build/status/MicroLite-ORM.MicroLite.Extensions.MiniProfiler?branchName=develop)](https://dev.azure.com/trevorpilley/MicroLite-ORM/_build/latest?definitionId=31&branchName=develop)|
 |/master|[![Build Status](https://dev.azure.com/trevorpilley/MicroLite-ORM/_apis/build/status/MicroLite-ORM.MicroLite.Extensions.MiniProfiler?branchName=master)](https://dev.azure.com/trevorpilley/MicroLite-ORM/_build/latest?definitionId=31&branchName=master)|
 
+MicroLite.Extensions.MiniProfiler is a .NET 4.5 library which adds an extension for the MicroLite ORM Framework to integrate with [MiniProfiler](http://miniprofiler.com/).
+
 ## Installation
 
 Install the nuget package `Install-Package MicroLite.Extensions.MiniProfiler`
 
-## Summary
-
-MicroLite.Extensions.MiniProfiler is a .NET 4.5 library which adds an extension for the MicroLite ORM Framework to integrate with [MiniProfiler](http://miniprofiler.com/).
+## Configuration
 
 You can then load the extension in your application start-up:
 
