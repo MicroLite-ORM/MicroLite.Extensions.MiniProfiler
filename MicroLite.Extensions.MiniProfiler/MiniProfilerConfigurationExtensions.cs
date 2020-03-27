@@ -1,6 +1,6 @@
 ﻿// -----------------------------------------------------------------------
 // <copyright file="MiniProfilerConfigurationExtensions.cs" company="Project Contributors">
-// Copyright 2012 - 2018 Project Contributors
+// Copyright Project Contributors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -10,12 +10,13 @@
 //
 // </copyright>
 // -----------------------------------------------------------------------
+using System;
+using System.Data.Common;
+using StackExchange.Profiling;
+using StackExchange.Profiling.Data;
+
 namespace MicroLite.Configuration
 {
-    using System;
-    using StackExchange.Profiling;
-    using StackExchange.Profiling.Data;
-
     /// <summary>
     /// Extensions for the MicroLite configuration.
     /// </summary>
@@ -28,7 +29,7 @@ namespace MicroLite.Configuration
         /// <returns>The configure extensions.</returns>
         public static IConfigureExtensions WithMiniProfiler(this IConfigureExtensions configureExtensions)
         {
-            if (configureExtensions == null)
+            if (configureExtensions is null)
             {
                 throw new ArgumentNullException(nameof(configureExtensions));
             }
@@ -37,7 +38,7 @@ namespace MicroLite.Configuration
 
             Configure.OnSessionFactoryCreated = (ISessionFactory sessionFactory) =>
             {
-                var dbProviderFactory = sessionFactory.DbDriver.DbProviderFactory;
+                DbProviderFactory dbProviderFactory = sessionFactory.DbDriver.DbProviderFactory;
 
                 sessionFactory.DbDriver.DbProviderFactory = new ProfiledDbProviderFactory(dbProviderFactory);
 
